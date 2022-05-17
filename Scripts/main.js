@@ -1,30 +1,22 @@
-
+function game(){
 const choices = ["rock", "paper", "scissors"];//Creates array of possible choices
 
 function computerPlay() {
     return choices[Math.floor(Math.random()*choices.length)];//Randomizes computer choice
 }
 
-const computerSelection = computerPlay();
+let computerSelection = computerPlay();
 console.log(computerSelection)
 
-function playerChoice() {
-    let input = prompt("Type Rock, Paper or Scissors");//Prompts user for input
-    while(input == null){
-        input = prompt("Type Rock, Paper or Scissors");//Keeps prompt box persistent until choice is made 
-    }
-    input = input.toLowerCase(); //Makes player choice case-insensitive
-    console.log(input);
-}
-
-const playerSelection = playerChoice();
-
+let playerSelection = prompt("Type Rock, Paper or Scissors").toLowerCase();//Prompts user for input
+console.log(playerSelection);
 
 function playRound(playerSelection, computerSelection) {
-   if (playerSelection === computerSelection) {
-       return "tie!";
-   } 
+    if (playerSelection === computerSelection) {
+        return "tie!";
+    } else if ((playerSelection === "rock" && computerSelection === "scissors") || (playerSelection === "paper" && computerSelection === "rock" || playerSelection === "scissors" && computerSelection === "paper")) {
+        return "You win!"
+    } else return "Loser!";
 }    
-console.log(playRound()); 
-
-  
+console.log(playRound(playerSelection, computerSelection)); 
+}
