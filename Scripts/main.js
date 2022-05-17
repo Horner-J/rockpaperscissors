@@ -1,4 +1,9 @@
 function game(){
+    const games = 5; // total games 
+    let playerPoints = 0; // player points to start
+    let computerPoints = 0; // computer points to start
+  
+    for(let i = 0; i < games; i++) {
 const choices = ["rock", "paper", "scissors"];//Creates array of possible choices
 
 function computerPlay() {
@@ -19,4 +24,6 @@ function playRound(playerSelection, computerSelection) {
     } else return "Loser!";
 }    
 console.log(playRound(playerSelection, computerSelection)); 
+
+}
 }
