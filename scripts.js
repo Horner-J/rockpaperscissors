@@ -6,3 +6,6 @@ var myArray = [
   
   var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
+function computerPlay (){
+    return randomItem
+}
