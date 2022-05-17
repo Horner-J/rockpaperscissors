@@ -11,7 +11,7 @@ function game(){
         }
 
     let computerSelection = computerPlay();
-    console.log(computerSelection)
+    // console.log(computerSelection)
 
     let playerSelection = prompt("Type Rock, Paper or Scissors").toLowerCase();//Prompts user for input
     console.log(playerSelection);
