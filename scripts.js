@@ -1,7 +1,7 @@
 var myArray = [
-    "Rock",
-    "Paper",
-    "Scissors"
+    "rock",
+    "paper",
+    "scissors"
   ];
   
   var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
@@ -10,7 +10,8 @@ function computerPlay (){
     return randomItem
 }
 
-var playerSelection = window.prompt("Rock, Paper or Scissors? ");
+var playerSelection = window.prompt("rock, paper or scissors? ");
+console.log(playerSelection)
 
 function playRound(playerSelection, computerSelection) {
     // your code here!
