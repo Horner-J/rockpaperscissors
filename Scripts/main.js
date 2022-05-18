@@ -31,7 +31,7 @@ console.log(playerPoints, computerPoints)
 }
 
 if(playerPoints === computerPoints){
-    console.log("A Tie?! Boring!!")
+    console.log("A Tie?! Lame!")
 } else if(playerPoints > computerPoints){
     console.log('');
     console.log("Nice work! You beat the dumb Computer " + playerPoints + " to " + computerPoints);
